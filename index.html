@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon/image" href="./src/images/icon.avif" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>OH.STUDIO — Frontend Practice</title>
+  </head>
+  <body>
+    <!-- 
+    This is just a popup contains some infos 
+    you can delete after reviewing this project
+    -->
+    <div class="popup_info">
+      <div class="exit_btn" id="exit">
+        <img class="exit" src="./src/images/x.svg" />
+      </div>
+      <h2 class="gr">
+        Hello <span class="user">//</span>! This is a clone of the
+        <span
+          ><a href="https://oh.studio/" target="_blank" class="off_site"
+            >oh.studio</a
+          ></span
+        >
+        site and coded by
+        <span
+          ><a
+            class="ig"
+            href="https://www.instagram.com/muhsench/"
+            target="_blank"
+            >@muhsench.</a
+          ></span
+        >
+      </h2>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <ul class="nav_list">
+          <li class="list_item">
+            <a id="home" class="active" href="#">Home</a>
+          </li>
+          <li class="list_item"><a id="profile" href="#">Profile</a></li>
+          <li class="list_item"><a id="contact" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero_section">
+      <div class="hero_content">
+        <div class="main_content">
+          <h1 class="title">
+            A brand and product designer working with clients globally
+          </h1>
+          <div class="cta_btn">
+            <button
+              onclick="tTS()"
+              class="btn"
+              style="background-color: transparent"
+            >
+              Expertise
+            </button>
+            <button onclick="tTS()" class="btn">Branding</button>
+            <button class="btn">Product</button>
+            <button class="btn">Design Sysytems</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects_section">
+      <div class="all_projects">
+        <div class="project_card" onclick=" projectNote()">
+          <a class="project_link" href="#">
+            <img class="project" src="./src/images/project-1.avif" alt="Aire" />
+            <div class="project_info">
+              <div class="project_name">Aire</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card" onclick="tTS()">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-2.avif"
+              alt="Correlated"
+            />
+            <div class="project_info">
+              <div class="project_name">Coreelated</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-3.avif"
+              alt="Channel 5"
+            />
+            <div class="project_info">
+              <div class="project_name">Channel 5</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-4.avif"
+              alt="Ronald Abram"
+            />
+            <div class="project_info">
+              <div class="project_name">Ronal Abram</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <video
+              autoplay
+              loop
+              muted
+              class="project"
+              src="./src/images/project-5.mp4"
+            ></video>
+            <div class="project_info">
+              <div class="project_name">Propeller</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-6.avif"
+              alt="Schuh"
+            />
+            <div class="project_info">
+              <div class="project_name">Schuh</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-7.avif"
+              alt="Paperstreet"
+            />
+            <div class="project_info">
+              <div class="project_name">Paperstreet</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <video
+              autoplay
+              loop
+              muted
+              class="project"
+              src="./src/images/project-8.mp4"
+            ></video>
+            <div class="project_info">
+              <div class="project_name">OH.SUPPLY</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-9.avif"
+              alt="Monokel Eyewear"
+            />
+            <div class="project_info">
+              <div class="project_name">Monokel Eyewear</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a class="project_link" style="cursor: context-menu">
+            <img
+              class="project"
+              src="./src/images/project-10.avif"
+              alt="Lawtrades"
+            />
+            <div class="project_info">
+              <div class="project_details">
+                <div class="project_name">Lawtrades</div>
+                <div class="coming_soon_txt">Coming Soon</div>
+              </div>
+              <div class="project_icon_bv">
+                <img class="lock_icon" src="./src/images/locker_bv.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a class="project_link" style="cursor: context-menu">
+            <img
+              class="project"
+              src="./src/images/project-11.avif"
+              alt="Baselworld"
+            />
+            <div class="project_info">
+              <div class="project_details">
+                <div class="project_name">Baselworld</div>
+                <div class="coming_soon_txt">Coming Soon</div>
+              </div>
+              <div class="project_icon_bv">
+                <img class="lock_icon" src="./src/images/locker_bv.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+        <div class="project_card">
+          <a href="#" class="project_link">
+            <video
+              autoplay
+              loop
+              muted
+              class="project"
+              src="./src/images/project-12.mp4"
+            ></video>
+            <div class="project_info">
+              <div class="project_name">NYCB</div>
+              <div class="project_icon">
+                <img class="icon" src="./src/images/arrow right up.svg" />
+              </div>
+            </div>
+            <div class="blur_overlay"></div>
+          </a>
+        </div>
+      </div>
+      <div class="all_project_mobile">
+        <div class="project_card_mobile_v" onclick="projectNote()">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-1.avif"
+              alt="Correlated"
+            />
+            <div class="project_name">Aire</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v" onclick="tTS()">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-2.avif"
+              alt="Correlated"
+            />
+            <div class="project_name">Coreelated</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-3.avif"
+              alt="Channel 5"
+            />
+            <div class="project_name">Channel 5</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-4.avif"
+              alt="Ronald Abram"
+            />
+            <div class="project_name">Ronal Abram</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <video
+              autoplay
+              loop
+              muted
+              class="project"
+              src="./src/images/project-5.mp4"
+            ></video>
+            <div class="project_name">Propeller</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-6.avif"
+              alt="Schuh"
+            />
+            <div class="project_name">Schuh</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-7.avif"
+              alt="Paperstreet"
+            />
+            <div class="project_name">Paperstreet</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <video
+              autoplay
+              loop
+              muted
+              class="project"
+              src="./src/images/project-8.mp4"
+            ></video>
+            <div class="project_name">OH.SUPPLY</div>
+          </a>
+        </div>
+
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-9.avif"
+              alt="Monokel Eyewear"
+            />
+            <div class="project_name">Monokel Eyewear</div>
+          </a>
+        </div>
+        <div class="project_card_mobile_v in_progress_project">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-10.avif"
+              alt="Lawtrades"
+            />
+            <div class="project_in_pr">
+              <div class="project_name">Lawtrades</div>
+              <span class="coming_soon">Coming soon</span>
+            </div>
+          </a>
+          <div class="lock">
+            <img class="lock_icon" src="./src/images/locker.svg" />
+          </div>
+        </div>
+        <div class="project_card_mobile_v in_progress_project">
+          <a href="#" class="project_link">
+            <img
+              class="project"
+              src="./src/images/project-11.avif"
+              alt="Baselworld"
+            />
+            <div class="project_in_pr">
+              <div class="project_name">Baselworld</div>
+              <span class="coming_soon">Coming soon</span>
+            </div>
+          </a>
+          <div class="lock">
+            <img class="lock_icon" src="./src/images/locker.svg" />
+          </div>
+        </div>
+        <div class="project_card_mobile_v">
+          <a href="#" class="project_link">
+            <video
+              autoplay
+              loop
+              muted
+              class="project"
+              src="./src/images/project-12.mp4"
+            ></video>
+            <div class="project_name">NYCB</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer_section">
+      <div class="footer_content">
+        <h1 class="footer_contact_title">Let's work together.</h1>
+        <h2 class="footer_mail">
+          <a href="#" class="site_contact_mail" onclick="tTS()"
+            >Get in touch.</a
+          >
+        </h2>
+      </div>
+      <div class="site_info">
+        <div class="footer_logo">
+          <svg
+            onclick="tTS()"
+            class="ft_logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 800 800"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <g clip-path="url(#__lottie_element_2)">
+              <g
+                transform="matrix(-0.0139467753469944,0.9999027252197266,-0.9999027252197266,-0.0139467753469944,400,400)"
+                opacity="1"
+              >
+                <path
+                  class="ft_logo"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  fill-opacity="0"
+                  stroke-miterlimit="4"
+                  stroke="rgb(0,0,0)"
+                  stroke-opacity="1"
+                  stroke-width="20.906202412175336"
+                  d=" M-243.26100158691406,-243.22900390625 C-243.26100158691406,-243.22900390625 243.26100158691406,243.22900390625 243.26100158691406,243.22900390625 M-243.22999572753906,243.25999450683594 C-243.22999572753906,243.25999450683594 243.22999572753906,-243.26100158691406 243.22999572753906,-243.26100158691406 M-344.0010070800781,0.02199999988079071 C-344.0010070800781,0.02199999988079071 344.0010070800781,-0.02199999988079071 344.0010070800781,-0.02199999988079071 M-0.02199999988079071,-344 C-0.02199999988079071,-344 0.02199999988079071,344 0.02199999988079071,344"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <span class="copyright">© Oli Harris 2023 | Coded by mohsine</span>
+        </div>
+        <div class="social_media">
+          <ul class="social_link">
+            <li class="sm"><a href="#" onclick="tTS()">Twitter</a></li>
+            <li class="sm"><a href="#" onclick="tTS()">Linkedin</a></li>
+            <li class="sm"><a href="#" onclick="tTS()">Mail</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+  </body>
+</html>
