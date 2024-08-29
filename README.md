@@ -54,7 +54,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Preview
 
-Check out the live preview of the project here: [Oh.studio Landing Page](https://mohsinech.github.io/OhStudio-clone-frontendPractice/)
+Check out the live preview of the project here: [Oh.studio Landing Page](https://mohsinech.github.io/Oh.studio-clone-frontendPractice/)
 
 ## Contact
 
